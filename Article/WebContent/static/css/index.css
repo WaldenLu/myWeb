@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+}
+
+.header {
+	height: 72px;
+	background: #458fce
+}
+.header .logo {
+    color: #fff ;
+    line-height: 72px ;
+    font-size: 30px ;
+    margin-left: 20px ;
+    display:inline-block ;
+    font-weight:500 ;
+    float: left;
+}
+.header ul li {
+    float: left ;
+    color: #fff;
+    display: inline-block;
+    width: 112px;
+    height: 72px;
+    text-align: center;
+    line-height: 72px;
+    cuisor: pointer;
+}
+.header ul li:hover {
+    background:#74b0e2 ;
+}
+
+ul li {
+    list-style: none ;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+.header .login {
+	float: right;
+	color: #fff;
+	line-height: 72px;
+	margin-right: 20px;
+}
+
+.banner{
+	height: 380px;
+	position: relative;
+	overflow: hidden;
+	/* margin-top: 20px; */
+}
+.banner .content{
+	width: 1060px;
+	height: 450px;
+	margin: 20px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.banner .content ul li img{
+	width: 1060px ;
+    height: 380px ;
+}
+
+.banner .content ul{
+	width: 10000px;
+	margin-left: -1060px;
+}
+
+.fl {float: left;}
+.fr {float: right;}
+
+.btn_left, .btn_right{
+	transition:all 2s ease 0.6s;/* transition:运动的样式 持续时间 运动形式 延迟时间 */
+	opacity: 0;
+	cursor: pointer;
+    display: inline-block;
+    width: 21px;
+    height: 150px;
+    background: url(../img/banner_tb.png) no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 90px;
+}
+
+.btn_right{
+    background-position: -29px 0;/* 原图是一个两个方向的箭头 用来切割得到右箭头 */
+    left: 1038px;
+    top: 90px;
+}
+
+.banner .content:hover .btn_left{opacity:1;}
+.banner .content:hover .btn_right{opacity:1;}
