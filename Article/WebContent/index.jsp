@@ -79,7 +79,7 @@ $(document).ready(function(){
 		</ul>
 		
 		<div class="login">
-		<span><a href="javascript:void(0)">登录</a></span>
+		<span><a href="login.jsp">登录</a></span>
 		<span>|</span>
 		<span><a href="javascript:void(0)">注册</a></span>
 		</div>
